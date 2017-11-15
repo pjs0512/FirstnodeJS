@@ -1,0 +1,22 @@
+{
+  "name": "nodejspractice",
+  "version": "1.0.0",
+  "description": "$ FirstnodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjs0512/FirstnodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjs0512/FirstnodeJS/issues"
+  },
+  "homepage": "https://github.com/pjs0512/FirstnodeJS#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
