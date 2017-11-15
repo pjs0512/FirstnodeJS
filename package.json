@@ -18,6 +18,8 @@
   "homepage": "https://github.com/pjs0512/FirstnodeJS#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
-    "express": "^4.16.2"
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.2"
   }
 }
