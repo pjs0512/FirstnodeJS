@@ -1,12 +1,12 @@
 var express = require('express');
+var path = require('path');
 
 var app = express();
 
-app.get('/',function (req,res) {
-    res.send("Hello World!");
+app.use(express.static(path.join(__dirname, 'public'))); // public 을 사용하겠다.
 
-});
+app.listen(3000,function () { // 서버 실행
 
-app.listen(3000,function () {
-    console.log('Server On!');
+    console.log('Server On!'); // 서버 실행시 보내는 메세지
+
 });

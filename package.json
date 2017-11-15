@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pjs0512/FirstnodeJS#readme",
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "express": "^4.16.2"
   }
 }
