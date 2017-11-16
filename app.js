@@ -1,7 +1,27 @@
 var express = require('express');
 var path = require('path');
+var mongoose = require('mongoose');
 
 var app = express();
+
+mongoose.connect(process.env.MONGO_DB);
+
+var db = mongoose.connection;
+
+db.once("open",function () {
+    console.log("DB connected!!");
+});
+db.on("error",function (err) {
+    console.log("DB ERROR :",err);
+});
+
+var dataSchema = mongoose.Schema({
+    name:String,
+    count:Number
+});
+
+var Data = mongoose.model('data', dataSchema);
+
 
 app.set("view engine",'ejs');
 app.use(express.static(path.join(__dirname, 'public'))); // public 을 사용하겠다.
